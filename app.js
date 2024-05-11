@@ -10,20 +10,26 @@ function addNewList(){
     let title = titleElem.value;
     let desc = descElem.value;
 
-    let newTodoObj ={
-        id: todoArray.length + 1,
-        title: title,
-        description: desc,
-        done: false
+    if(title !='' && desc != ''){
+        let newTodoObj ={
+            id: todoArray.length + 1,
+            title: title,
+            description: desc,
+            done: false
+        }
+    
+        titleElem.value = '';
+        descElem.value = '';
+        titleElem.focus();
+    
+        todoArray.push(newTodoObj)
+        setLocal(todoArray)
+        todoGenerator(todoArray)
     }
-
-    titleElem.value = '';
-    descElem.value = '';
-    titleElem.focus();
-
-    todoArray.push(newTodoObj)
-    setLocal(todoArray)
-    todoGenerator(todoArray)
+    else{
+        alert("Warning!!! Title or Description are Empty")
+    }
+    
 }
 
 
