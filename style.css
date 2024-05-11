@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(111, 131, 141);
+}
+input{
+    border: none;
+    outline: none;
+    background-color: rgb(238, 238, 238);
+}
+ul,li{
+    list-style: none;
+}
+
+
+.session{
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.form{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 20px;
+}
+.addSession{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+.addTitle{
+    width: 100%;
+    font-size: 18px;
+}
+.addTitle input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding:0 10px;
+    margin: 10px 0;
+}
+.addDes{
+    width: 100%;
+    font-size: 18px;
+}
+.addDes input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding:0 10px;
+    margin: 10px 0;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+#addBtn{ background-color: rgb(87, 168, 87);}
+#clearBtn{background-color: rgb(192, 119, 119);}
+
+.addTasx{
+    margin-top: 30px;
+}
+.liElem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 7px;
+}
+
+.liElem p{
+    color: gray;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.addTasx .done{
+    background-color: rgb(111, 196, 111);
+}
