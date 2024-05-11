@@ -94,3 +94,21 @@ button{
 .addTasx .done{
     background-color: rgb(111, 196, 111);
 }
+
+.notDone{
+    background-color: rgb(165, 223, 147);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+.notDone h4,
+.notDone p{
+    text-decoration: line-through;
+    margin-top: 8px;
+}
+.notDone .done{
+    background-color: rgb(128, 128, 128);
+}
